@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    { songName:"Night changes",filepath: "songs/1.mp3", coverPath: "banner1.jpeg" },
-    { songName: "aakhiyan", filepath: "songs/2.mp3", coverPath: "banner2.jpeg" },
-    { songName: "udaariyan", filepath: "songs/3.mp3", coverPath: "banner3.jpeg" },
-    { songName: "ikko mikke", filepath: "songs/4.mp3", coverPath: "banner4.jpeg" },
-    { songName: "memories", filepath: "songs/5.mp3", coverPath: "banner5.jpeg" },
-    { songName: "kinna chiar", filepath: "songs/6.mp3", coverPath: "banner6.jpeg" },
-    { songName: "gal karke", filepath: "songs/7.mp3", coverPath: "banner7.jpeg" },
-    { songName: "phir kabhi", filepath: "songs/8.mp3", coverPath: "banner8.jpeg" },
-    { songName: "tu hi yaar mera", filepath: "songs/9.mp3", coverPath: "banner9.jpeg" },
-    { songName: "woh din", filepath: "songs/10.mp3", coverPath: "banner10.jpeg" },
+    { songName:"Night changes",filepath: "1.mp3", coverPath: "banner1.jpeg" },
+    { songName: "aakhiyan", filepath: "2.mp3", coverPath: "banner2.jpeg" },
+    { songName: "udaariyan", filepath: "3.mp3", coverPath: "banner3.jpeg" },
+    { songName: "ikko mikke", filepath: "4.mp3", coverPath: "banner4.jpeg" },
+    { songName: "memories", filepath: "5.mp3", coverPath: "banner5.jpeg" },
+    { songName: "kinna chiar", filepath: "6.mp3", coverPath: "banner6.jpeg" },
+    { songName: "gal karke", filepath: "7.mp3", coverPath: "banner7.jpeg" },
+    { songName: "phir kabhi", filepath: "8.mp3", coverPath: "banner8.jpeg" },
+    { songName: "tu hi yaar mera", filepath: "9.mp3", coverPath: "banner9.jpeg" },
+    { songName: "woh din", filepath: "10.mp3", coverPath: "banner10.jpeg" },
 
 ]
 songItems.forEach((element, i) => {
