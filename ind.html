@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>melophile</title>
+    
+</head>
+<style>
+    body {
+      background-image: url('b.jpg');
+      background-repeat: no-repeat;
+      background-size: auto;
+    
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="melophile">melophile</li>
+            <li>home</li>
+            <li>about</li>
+        </ul>
+    </nav>
+
+    <div class='container'>
+        <div class="songlist">
+            <h1>album failana kaam hai </h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName">night changes</span>
+                    <span class="songlistplay"><span class="timestamp"><i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+      
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" vlaue="0" max=" 100">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="far fa-3x fa-solid fa-backward" id="previous" ></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="far fa-3x fa-solid fa-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="48px" alt="night changes" id="gif"><span id="masterSongName">Night changes</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a991394115.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=DynaPuff&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+</style>
+
+<style>
+ 
+    *{
+        margin:0;
+        padding: 0;
+    }
+
+    nav{
+        font-family: 'DynaPuff', cursive;
+        /*font-family: 'Silkscreen', cursive;*/
+        color: rgb(234, 234, 234);
+    }
+    nav ul{
+        display:flex;
+        align-items:center;
+        list-style-type: none;
+        height: 65px;
+        background-image: url('images.jpeg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity:20;
+    }
+    nav ul li{
+        padding: 0px 12px;
+        cursor:pointer;
+    }
+   
+    .brand img{
+        width: 50px;
+        padding: 0 2px;
+    }
+    .brand{
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 30px;
+    }
+    .container{
+        min-height:72vh;
+        background-color: black;
+        color:rgb(255, 255, 255);
+        font-family: 'Silkscreen', cursive;
+        display: flex;
+        margin:38px auto;
+        width:70%;
+        border-radius:15px;
+        padding:34px;
+        background-image: url('img.jpg');
+
+    }
+    .bottom{
+        position:sticky;
+        bottom:0;
+        height:100px;
+        background-color: rgb(28, 26, 26);
+        color:rgb(234, 234, 234);
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .icons i{
+        cursor:pointer;
+    }
+    #myProgressBar{
+        width:90%; 
+        cursor: pointer;
+    }
+    .songItem{
+        height: 50px;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+    
+        color: black;
+        margin: 12px 0px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 40px;
+    }
+    .songItem img{
+         width: 40px;
+         margin:0 23px;
+         border-radius:  40px;    
+    }
+    .timestamp{
+        margin:0px 23px;
+    }
+    .timestamp i{
+        cursor: pointer;
+    }
+    .songItemContainer{
+        margin-top: 35px;
+    }
+    .songInfo{
+        position: absolute;
+        left: 4vw;
+    }
+    .songInfo img{
+       opacity: 0;
+       transition: opacity 0.5s ease-in;
+    }
+</style>
+
+.medio
